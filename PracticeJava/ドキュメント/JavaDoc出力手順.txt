@@ -1,0 +1,10 @@
+/*** JavaDoc出力手順 ***/
+1.出力する、JavaDocコメントを記載したプロジェクトを右クリック
+2.[エクスポート(export)]→[Java]→[JavaDoc]を選択
+3.「次へ」をクリックして「JavaDocコマンド」を確認
+4.「JavaDocコマンド」の内容(パス)にjavadocファイル(javadoc.exe)があるか確認
+    ex:
+      「C:¥ProguramFiles¥Java¥jdk1.8.0_60¥bin¥javadoc.exe」
+      と書いてあれば、マイコンピュータ→Cドライブ→ProgramFile→Java→jdk1.8.0_60→binフォルダ
+      の中にjavadoc.exeがあるはず。。。ない時はJDKをダウンロードして
+      「ReadMe.txt」の「Eclipseの設定」を読み進めてください。
