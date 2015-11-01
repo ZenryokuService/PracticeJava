@@ -5,6 +5,7 @@ package jp.zenryoku.sample;
  * そして「JavaDoc」を出力する時に記載される内容になります。
  */
 /**
+ * Step1-1
  * クラスに対する、JavaDocコメント部分
  * 「ドキュメント/ReadMe.txt」＜Step1＞でのサンプルプログラム
  * このクラスは、メインメソッドを起動するためのクラス
@@ -12,7 +13,7 @@ package jp.zenryoku.sample;
  * @author ZenryokuService → このプログラムの作成者の名前を記述する
  *                           「@」はjavadoc.exeが作成者名を認識するための記述
  */
-public class Step1 {
+public class Step1_1 {
 	/**
 	 * メソッドに対するJavaDocコメント部分
 	 * 単純クラス定義の上に書けばクラス、メソッド定義の上で書けばメソッドに対応するJavaDocとなる
@@ -33,12 +34,17 @@ public class Step1 {
 	 * @param args　メインメソッドの引数はプログラム引数を示す
 	 */
 	public static void main(String[] args) {
+		// 1行コメント部分
+		/*
+		 * 複数行コメント部分
+		 * 処理の説明など複数行に渡りコメントを記述する
+		 */
 		System.out.println("Step1");
 	}
 
 	/**
 	 * 下記「yobareru()」はクラス内にある「メンバメソッドとよばれる
-	 * public void yobareru()　
+	 * public void yobareru()
 	 * 修飾子  返却値 メソッド名　右のような決まりがあり
 	 * クラス外部からも参照できる（公開）返却値なしの「yobareru」という名の引数なしメソッド
 	 * という意味になる
