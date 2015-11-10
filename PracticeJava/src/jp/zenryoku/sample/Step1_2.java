@@ -1,17 +1,15 @@
 package jp.zenryoku.sample;
 
 /**
- * Step1-2
- * 変数の扱い方のサンプルソース
+ * Step1-2<br/>
+ * 変数の扱い方のサンプルソース<br/>
  * @author ZenryokuService
  */
 public class Step1_2 {
 	/**
-	 * メインメソッド：変数の扱い方のサンプル
-	 * 
-	 * 【変数の種類】
-	 * int型 
-	 * @param args
+	 * メインメソッド：変数の扱い方のサンプル<br/>
+	 * 下にあるmondai1()やmondai2()とは違うので注意<br/>
+	 * @param args プログラム引数
 	 */
 	public static void main(String[] args) {
 		// 変数宣言
@@ -41,56 +39,19 @@ public class Step1_2 {
 	}
 
 	/**
-	 * 問3のサンプルソース
-	 * このメソッドを書き換えずに
-	 * 「edcba」と表示させてください
+	 * 問1のメソッド<br/>
+	 * メインメソッドと違い、コマンド（ファイルを右クリックして）起動できない
 	 */
-	public void mondai3() {
-		// char型の配列
-		char[] ch = {'a', 'b', 'c', 'd', 'e'};
-		char[] result = sortChar(ch);
-
-		System.out.println("答え："
-				+ result[0] + result[1] + result[2] + result[3] + result[4]);
-	}
-
-	/**
-	 * 問3の配列をソートするメソッド
-	 * ここのソースをjp.zenryoku.sample以下に
-	 * コピーして作成してください
-	 * @param ch
-	 * @return char[] ソートを完了した配列
-	 */
-	private char[] sortChar(char[] ch) {
+	public void mondai1() {
 		
-		return ch;
 	}
 
 	/**
-	 * 問4：メソッドhenshuを書き換えて
-	 *     答えに40を表示してください
+	 * 問2のメソッド<br/>
+	 * メインメソッドと違い、コマンド（ファイルを右クリックして）起動できない
 	 */
-	public void mondai4() {
-		// int型の配列
-		int[] nums = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-		int kekka = 0;
-		// 配列の編集処理
-		nums = henshu(nums);
-		/*
-		 * 繰り返しのFOR文
-		 * 配列を０番目から最後まで繰り返し処理を行う
-		 */
-		for(int i=0; i < nums.length; i++) {
-			kekka += nums[i];
-		}
-		System.out.println("答え：" + kekka);
+	public void mondai2() {
+		
 	}
-	/**
-	 * 問4の配列を編集するメソッド
-	 * ここのソースをjp.zenryoku.sample以下に
-	 * コピーして作成してください
-	 */
-	private int[] henshu(int[] nums) {
-		return nums;
-	}
+
 }
