@@ -1,8 +1,10 @@
 package jp.zenryoku.sample;
 
 /**
- * Step1-2<br/>
+ * Step1-2:数値の扱い<br/>
  * 変数の扱い方のサンプルソース<br/>
+ * 
+ * @see http://takunoji.hatenablog.com/entry/2015/11/01/141246
  * @author ZenryokuService
  */
 public class Step1_2 {

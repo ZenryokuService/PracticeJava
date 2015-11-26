@@ -1,10 +1,12 @@
 package jp.zenryoku.sample;
 
 /**
- * Step1-3<br/>
+ * Step1-3:char配列の扱い<br/>
+ * 
  * <br/>はJavaDoc用の改行タグです
- * @author yogotakumi
- *
+ * 
+ * @see http://takunoji.hatenablog.com/entry/2015/11/03/165638
+ * @author ZenryokuService
  */
 public class Step1_3 {
 
@@ -40,7 +42,8 @@ public class Step1_3 {
 	}
 
 	/**
-	 * 問2:
+	 * 問2:ch1の配列の中身を入れ替えて"BACED"と表示させてください
+	 *     *注意printArray(char[] ch1)のメソッドは書き換えないでください
 	 */
 	public void mondai2() {
 		char[] ch1 = {'A', 'B', 'C', 'D', 'E'};

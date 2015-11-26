@@ -5,11 +5,12 @@ package jp.zenryoku.sample;
  * そして「JavaDoc」を出力する時に記載される内容になります。
  */
 /**
- * Step1-1
+ * Step1-1:Hello World
  * クラスに対する、JavaDocコメント部分
  * 「ドキュメント/ReadMe.txt」＜Step1＞でのサンプルプログラム
  * このクラスは、メインメソッドを起動するためのクラス
  * 
+ * @see http://takunoji.hatenablog.com/entry/2015/10/25/134301
  * @author ZenryokuService → このプログラムの作成者の名前を記述する
  *                           「@」はjavadoc.exeが作成者名を認識するための記述
  */
