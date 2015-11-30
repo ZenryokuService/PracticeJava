@@ -43,7 +43,7 @@ public class Step1_3 {
 
 	/**
 	 * 問2:ch1の配列の中身を入れ替えて"BACED"と表示させてください
-	 *     *注意printArray(char[] ch1)のメソッドは書き換えないでください
+	 *     *注意printArray(char[] ch1()のメソッドは書き換えないでください
 	 */
 	public void mondai2() {
 		char[] ch1 = {'A', 'B', 'C', 'D', 'E'};
@@ -51,7 +51,8 @@ public class Step1_3 {
 	}
 
 	/**
-	 * 問2の表示用のメソッド
+	 * 問2の表示用のメソッド<br/>
+	 * 書き換えないでください
 	 * @param ch1
 	 */
 	private void printArray(char[] ch1) {
