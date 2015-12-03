@@ -1,13 +1,18 @@
 package jp.zenryoku.sample;
 
+import java.awt.Container;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
 /**　この行からJavaDocコメントです<br/>
  * Step1-4:Stringクラスの扱い<br/>
  * クラス型（オブジェクト型）の変数の扱い、メソッドの扱いの練習<br/>
  * <br/>
  * 下にある＠マーク次の行は、JavaDocに付帯情報を表示するためのものです<br/>
  * JavaDocについては<a href="https://ja.wikipedia.org/wiki/Javadoc">こちら</a>
- * 
- * @see http://takunoji.hatenablog.com/entry/2015/11/05/184839
+ * <br/>
+ *  <a href="http://takunoji.hatenablog.com/entry/2015/11/05/184839">参照</a>
  * @author ZenryokuService
  */
 /*
@@ -16,20 +21,48 @@ package jp.zenryoku.sample;
  *  　　　　　　[abstract class] Step1-4.txtの「抽象クラス」参照
  */
 public abstract class Step1_4 {
-
 	/**
 	 * インナークラス
+	 * @author ZenryokuService
 	 */
 	private class SampleCode1_4 {
 		/** フィールド変数 */
 		private String str = "文字";
 		/**
-		 * 文字を返却する
+		 * 文字を返却するメソッド
+		 * @return String フィールドを返却します
 		 */
 		public String getStr() {
 			// thisと記述したクラスを示す
 			// この場合はSampleCode4クラス
 			return this.str;
+		}
+		/**
+		 * java.swingを使用してフレーム、パネル、ボタンコンポーネントを<br/>
+		 * 作成し、表示します。
+		 * @see https://docs.oracle.com/javase/jp/6/api/
+		 */
+		public void createSwing() {
+			JFrame frame = new JFrame("Swingサンプル");
+			///// JFrameの設定を行います ////
+
+			// 表示画面のサイズを指定します
+			frame.setSize(300, 200);
+			// 画面が閉じる時の処理を指定します。JFrameクラスのフィールドEXIT_ON_CLOSE→値は3
+			frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+			/*
+			 *  java.awt.Containerクラスを取得
+			 *  このクラスで画面（フレーム）に各コンポーネントを追加する
+			 *  ※コンポーネント＝＞ボタン、テキストラベル、テキストボックスなど...
+			 */
+			Container con = frame.getContentPane();
+			// JPanelを作成
+			JPanel panel = new JPanel();
+			// パネルにラベルを追加
+			panel.add(new JLabel("createSwingのラベル"));
+			// Containerへパネルを追加
+			con.add(panel);
+			
 		}
 	}
 	/**
@@ -140,5 +173,11 @@ public abstract class Step1_4 {
 		default:
 			System.out.println("その他");
 		}
+
+		/*
+		 * java.swingパッケージを使用して、サーバーに接続しない
+		 * スタンドアロン・アプリケーションを起動する
+		 */
+		
 	}
  }
